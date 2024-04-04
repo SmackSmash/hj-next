@@ -19,8 +19,8 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <div className='min-h-screen flex flex-row'>
-          <nav className='bg-slate-50'>
+        <div className='min-h-screen flex flex-row bg-black'>
+          <nav className='bg-slate-50 dark:bg-slate-50 p-4'>
             <Link href='/contact'>Contact</Link>
           </nav>
           {children}
