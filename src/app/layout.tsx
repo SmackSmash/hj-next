@@ -20,8 +20,9 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <div className='min-h-screen flex flex-row bg-black'>
-          <nav className='bg-slate-50 dark:bg-slate-50 p-4'>
+          <nav className='bg-slate-50 dark:bg-slate-50 p-4 flex flex-col'>
             <Link href='/contact'>Contact</Link>
+            <Link href='/gallery'>Gallery</Link>
           </nav>
           {children}
         </div>
