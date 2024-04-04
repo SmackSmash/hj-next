@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
@@ -17,7 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className='min-h-screen flex flex-row'>
+          <nav className='bg-slate-50'>
+            <Link href='/contact'>Contact</Link>
+          </nav>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
